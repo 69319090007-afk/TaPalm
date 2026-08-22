@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        TaPalm - ระบบตรวจสอบความสุกปาล์ม
+    </title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<main class="container">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <section class="header">
+
+        <div class="brand">
+
+            <div class="logo">
+                🌴
+            </div>
+
+            <div class="brand-text">
+
+                <h1>
+                    ระบบตรวจสอบความสุกปาล์ม
+                </h1>
+
+                <p>
+                    Palm Ripeness Monitoring
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="last-check">
+
+            <div class="label">
+                ตรวจล่าสุด
+            </div>
+
+            <div
+                class="date-time"
+                id="lastCheck"
+            >
+                -
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         READINESS
+    ========================== -->
+
+    <section class="readiness-card">
+
+        <div class="readiness-title">
+            ความพร้อมในการตัด
+        </div>
+
+
+        <div
+            class="percentage"
+            id="readiness"
+        >
+            0%
+        </div>
+
+
+        <div
+            class="status ready"
+            id="status"
+        >
+
+            <span class="status-dot"></span>
+
+            <span id="statusText">
+                -
+            </span>
+
+        </div>
+
+
+        <div class="prediction">
+
+            คาดการณ์:
+
+            <strong id="prediction">
+                -
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SUMMARY
+    ========================== -->
+
+    <section class="summary-grid">
+
+
+        <!-- =================================
+             ต้นที่ตรวจ
+             รูป: tree.png
+        ================================== -->
+
+        <div class="summary-card tree-card">
+
+            <div class="icon-box">
+                <img
+                    src="images/tree.png"
+                    alt="ต้นปาล์มที่ตรวจ"
+                    class="summary-icon"
+                >
+            </div>
+
+            <div
+                class="summary-number"
+                id="treeCount"
+            >
+                0
+            </div>
+
+            <div class="summary-header">
+                ต้นที่ตรวจ
+            </div>
+
+            <div class="summary-name">
+                ทะลายปาล์ม
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             ผลทั้งหมด
+        ================================== -->
+
+        <div class="summary-card all-card">
+
+            <div class="icon-box">
+                <span class="emoji-icon">💡</span>
+            </div>
+
+            <div
+                class="summary-number"
+                id="fruitCount"
+            >
+                0
+            </div>
+
+            <div class="summary-header">
+                ผลทั้งหมด
+            </div>
+
+            <div class="summary-name">
+                ทะลายปาล์ม
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             ผลสุก
+             รูป: ripe.png
+        ================================== -->
+
+        <div class="summary-card ripe">
+
+            <div class="icon-box">
+                <img
+                    src="images/ripe.png"
+                    alt="ผลปาล์มสุก"
+                    class="summary-icon"
+                >
+            </div>
+
+            <div
+                class="summary-number"
+                id="ripeCount"
+            >
+                0
+            </div>
+
+            <div class="summary-header">
+                ผลสุก
+            </div>
+
+            <div class="summary-name">
+                ทะลายปาล์ม
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             ผลกึ่งสุก
+             รูป: half.png
+        ================================== -->
+
+        <div class="summary-card half-ripe">
+
+            <div class="icon-box">
+                <img
+                    src="images/half.png"
+                    alt="ผลปาล์มกึ่งสุก"
+                    class="summary-icon"
+                >
+            </div>
+
+            <div
+                class="summary-number"
+                id="halfRipeCount"
+            >
+                0
+            </div>
+
+            <div class="summary-header">
+                ผลกึ่งสุก
+            </div>
+
+            <div class="summary-name">
+                ทะลายปาล์ม
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             ผลดิบ
+             รูป: raw.png
+        ================================== -->
+
+        <div class="summary-card raw">
+
+            <div class="icon-box">
+                <img
+                    src="images/raw.png"
+                    alt="ผลปาล์มดิบ"
+                    class="summary-icon"
+                >
+            </div>
+
+            <div
+                class="summary-number"
+                id="rawCount"
+            >
+                0
+            </div>
+
+            <div class="summary-header">
+                ผลดิบ
+            </div>
+
+            <div class="summary-name">
+                ทะลายปาล์ม
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- JavaScript -->
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

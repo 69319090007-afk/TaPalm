@@ -1,0 +1,727 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+
+    font-family:
+        "Noto Sans Thai",
+        Arial,
+        sans-serif;
+
+    background: #f3f7f4;
+
+    color: #1f2937;
+
+    min-height: 100vh;
+
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 26px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.06);
+
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+
+.logo {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 16px;
+
+    background: #16a34a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 34px;
+
+    flex-shrink: 0;
+
+}
+
+
+.brand-text h1 {
+
+    font-size: 28px;
+
+    line-height: 1.25;
+
+    color: #14532d;
+
+}
+
+
+.brand-text p {
+
+    margin-top: 5px;
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+}
+
+
+/* ========================================
+   LAST CHECK
+======================================== */
+
+.last-check {
+
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+}
+
+
+.label {
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.date-time {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #374151;
+
+}
+
+
+/* ========================================
+   READINESS CARD
+======================================== */
+
+.readiness-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.readiness-title {
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #374151;
+
+}
+
+
+.percentage {
+
+    font-size: 84px;
+
+    font-weight: 800;
+
+    color: #15803d;
+
+    margin: 15px 0 8px;
+
+    line-height: 1;
+
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-top: 6px;
+
+}
+
+
+.status.ready {
+
+    color: #15803d;
+
+}
+
+
+.status.not-ready {
+
+    color: #dc2626;
+
+}
+
+
+.status-dot {
+
+    width: 15px;
+
+    height: 15px;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+
+}
+
+
+.status.ready .status-dot {
+
+    background: #22c55e;
+
+}
+
+
+.status.not-ready .status-dot {
+
+    background: #ef4444;
+
+}
+
+
+/* ========================================
+   PREDICTION
+======================================== */
+
+.prediction {
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    color: #6b7280;
+
+}
+
+
+.prediction strong {
+
+    color: #374151;
+
+    font-size: 19px;
+
+}
+
+
+/* ========================================
+   SUMMARY GRID
+======================================== */
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+/* ========================================
+   SUMMARY CARD
+======================================== */
+
+.summary-card {
+
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 22px 14px 24px;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.06);
+
+    border: 2px solid transparent;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+/* ========================================
+   ICON BOX
+   (รูปแสดงชัดเจน ไม่ใช่พื้นหลังจางๆ)
+======================================== */
+
+.icon-box {
+
+    width: 96px;
+
+    height: 96px;
+
+    border-radius: 20px;
+
+    background: #f3f7f4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+}
+
+
+.summary-icon {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 8px;
+
+}
+
+
+.emoji-icon {
+
+    font-size: 52px;
+
+    line-height: 1;
+
+}
+
+
+/* ========================================
+   SUMMARY NUMBER
+======================================== */
+
+.summary-number {
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    line-height: 1.1;
+
+}
+
+
+/* ========================================
+   SUMMARY HEADER
+======================================== */
+
+.summary-header {
+
+    color: #374151;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    margin-top: 6px;
+
+}
+
+
+/* ========================================
+   SUMMARY NAME
+======================================== */
+
+.summary-name {
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    margin-top: 3px;
+
+}
+
+
+/* ========================================
+   CARD ACCENT COLORS
+======================================== */
+
+.tree-card {
+
+    border-color: #bbf7d0;
+
+}
+
+
+.tree-card .icon-box {
+
+    background: #ecfdf3;
+
+}
+
+
+.all-card {
+
+    border-color: #e5e7eb;
+
+}
+
+
+.all-card .icon-box {
+
+    background: #f3f4f6;
+
+}
+
+
+.ripe {
+
+    border-color: #bbf7d0;
+
+}
+
+
+.ripe .icon-box {
+
+    background: #ecfdf3;
+
+}
+
+
+.ripe .summary-number {
+
+    color: #16a34a;
+
+}
+
+
+.half-ripe {
+
+    border-color: #fde68a;
+
+}
+
+
+.half-ripe .icon-box {
+
+    background: #fffbeb;
+
+}
+
+
+.half-ripe .summary-number {
+
+    color: #ca8a04;
+
+}
+
+
+.raw {
+
+    border-color: #fecaca;
+
+}
+
+
+.raw .icon-box {
+
+    background: #fef2f2;
+
+}
+
+
+.raw .summary-number {
+
+    color: #dc2626;
+
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.summary-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 700px) {
+
+    .container {
+
+        padding: 15px;
+
+    }
+
+
+    .summary-number {
+
+        font-size: 42px;
+
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 12px;
+
+    }
+
+
+    .header {
+
+        padding: 20px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .brand-text h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .percentage {
+
+        font-size: 64px;
+
+    }
+
+
+    .status {
+
+        font-size: 20px;
+
+    }
+
+
+    .readiness-card {
+
+        padding: 30px 15px;
+
+    }
+
+
+    .summary-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .summary-card {
+
+        border-radius: 16px;
+
+        padding: 18px 10px 20px;
+
+    }
+
+
+    .icon-box {
+
+        width: 78px;
+
+        height: 78px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .emoji-icon {
+
+        font-size: 42px;
+
+    }
+
+
+    .summary-number {
+
+        font-size: 36px;
+
+    }
+
+
+    .summary-header {
+
+        font-size: 17px;
+
+    }
+
+
+    .summary-name {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 380px) {
+
+    .summary-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .summary-card {
+
+        padding: 20px;
+
+    }
+
+
+    .icon-box {
+
+        width: 88px;
+
+        height: 88px;
+
+    }
+
+
+    .summary-number {
+
+        font-size: 40px;
+
+    }
+
+}
